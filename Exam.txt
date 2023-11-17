@@ -1,0 +1,30 @@
+<!DOCTYPE tml>
+<html>
+<head>
+<title>DOM Elements,Events</title>
+<script>
+function add(){
+var a,b;
+a=parseInt(document.getElementById("t1").value);
+b=parseInt(document.getElementById("t2").value);
+document.getElementById("result").value=(a+b);
+}
+function sub(){
+var a,b;
+a=parseInt(document.getElementById("t1").value);
+b=parseInt(document.getElementById("t2").value);
+document.getElementById("result").value=(a-b);
+}
+</script>
+</head>
+<body>
+<label >Enter a value</label>
+<input id="t1" type="text" style="background-color:lightgray"><br>
+<label>Enter b value</label>
+<input id="t2" type="text" style="background-color:lightgray"><br>
+<label>Result</label>
+<input disabled id="result" type="text" style="background-color:lightgray"><br>
+<button onclick="add()" type="button">Addition</button>
+<button onclick="sub()" type="button">Subtraction</button>
+</body>
+</html>
